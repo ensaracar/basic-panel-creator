@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 
 module.exports = () => {
-    const uri = "mongodb+srv://ensarTestDb:test123@cluster0.icu7z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = "localhost";
 
     mongoose.connect(uri, { useNewUrlParser: true,  useUnifiedTopology: true } );
 
