@@ -4,7 +4,6 @@ var btn = $('.submit--');
 
 
 btn.on('click', function () {
-        console.log(document.getElementById('htmlContent').value)
         var json = html2json(document.getElementById('htmlContent').value);
         var html = json2html(json);
 
@@ -12,6 +11,7 @@ btn.on('click', function () {
         console.log(json)
 
         $('#log').html(html)
+        $('pre').html(JSON.stringify(json))
 
     // Insert the node names
         /*$log.append( "<h3>Node Names:</h3>" );

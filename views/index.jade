@@ -3,11 +3,21 @@ extends layout
 block content
   //p Welcome to #{title}
 
-  textarea(rows="6", id="htmlContent", placeholder='html content')
+
+  p 1-Go the&nbsp;
+    a(href='https://www.namecheap.com/support/knowledgebase/article.aspx/9737/2208/pointing-a-domain-to-the-heroku-app/', target='_blank') example link
+    | &nbsp;and press
+    b &nbsp;CTRL+U.
+    br
+    | 2- Copy all HTML codes and past&nbsp;
+    u < htmlbox >
+    | &nbsp;inside
+
+  textarea(rows="6", id="htmlContent", placeholder='< htmlbox >')
 
   button.submit-- Start
 
-  input(type='file')
 
   br
-  #log(style='width:100%;height:100vh; overflow:auto; white-space: pre-line;')
+  pre(style='width:100%;height:50vh; white-space: normal; word-break: break-all;overflow:auto;')
+  #log(style='width:100%;height:100vh; overflow:auto;')
